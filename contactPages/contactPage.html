@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="..\generalStyle.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="https://i.pinimg.com/originals/95/f8/58/95f8588d6469a16271ea2d2fad419d00.png" 
+                alt="Logo can't display.">
+            </div>
+            <div id="nav1">
+                <a id="navHome" href="..\homePage\homePage.html">Home Page</a>
+                <a id="navHistory" href="..\category\categoryPage.html">History</a>
+                <a id="navComic" href="..\category\categoryPage.html">History but another</a>
+            </div>
+        </header>
+        <main>
+            <div id="heading">
+                <h1>Contact Us</h1>
+            </div>
+            <form onsubmit="return false;" method="post" enctype="multipart/form-data">
+                <ul>
+                    <li>
+                        <div>
+                            <p>Contact purpose: </p>
+                            <select name="purpose">
+                                <option value="">Please select</option>
+                                <option value="Business">I want to sell books</option>
+                                <option value="Personal">I want to buy books</option>
+                            </select>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="form-row">
+                            <div class="form-label">
+                                <label for="name">Your name: </label>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" placeholder="Your name here" autocomplete="on" required>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="form-row">
+                            <div class="form-lable">
+                                <label for="email">Your email: </label>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" placeholder="" autocomplete="on" required>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="form-row">
+                            <div class="form-lable">
+                                <label for="phone">Your phone: </label>
+                            </div>
+                            <div class="form-field">
+                                <input type="number" id="phone" name="phone" step="1" placeholder="" autocomplete="on" required>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="form-label">
+                            <label for="contactMethod">How can we contact you: </label>
+                        </div>
+                        <div class="option-group">
+                            <input type="checkbox" id="contactMethod[]" name="contact_method" value="email">By email <br>
+                            <input type="checkbox" id="contactMethod[]" name="contact_method" value="phone">By phone
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-row">
+                            <p>Do you want to receive our weekly newsletter: </p>
+                            <div class="option-group">
+                                <input type="radio" name="ans" value="yes">Yes<br>
+                                <input type="radio" name="ans" value="no">No<br>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Note: </p>
+                        <textarea name="note" rows=4 cols=40 wrap="soft"
+                            placeholder="Enter your note(optional)"></textarea>
+                    </li>
+                    <br>
+                    <div>
+                        <input type="submit" name="submit_button" value="Submit">
+                        <input type="reset" name="reset_button" value="Clear filled data">
+                    </div>
+                </ul>
+            </form>
+
+        </main>
+        <footer>
+            <div id="nav2">
+                <a href="#" id="aboutUs">About US</a>
+                <a href="#" id="policy">Privacy Policy</a>
+                <a href="#" id="terms">Terms</a>
+                <a href="#" id="copyright">Copyright</a>
+                <a href="..\contactPages\contactPage.html" id="contact">Contact Us</a>
+            </div>
+        </footer>
+    </body>
+</html>
